@@ -1,0 +1,65 @@
+<html>
+  <body>
+    <div style="width: 60%; float: left;">
+      <div class="method">
+        <h1>Método de Cuadrados Centrales</h2>
+        <label for="iterations">Iteraciones</label>
+        <input id="centrales-iterations" placeholder="Ingrese iteraciones" value="0" type="number"/>
+        <br>
+        <label for="seed">Semilla</label>
+        <input id="centrales-seed" placeholder="Ingrese semilla" value="0" type="number"/>
+        <br>
+  
+        <button id="centrales-generate" onclick="generateCuadradosCentrales()">Generar</button>
+      </div>
+  
+      <div class="method">
+        <h1>Método de congruencia lineal</h2>
+        <label for="iterations">Iteraciones</label>
+        <input id="lineal-iterations" placeholder="Ingrese iteraciones" value="0" type="number"/>
+        <br>
+        <label for="seed">Semilla</label>
+        <input id="lineal-seed" placeholder="Ingrese semilla" value="0" type="number"/>
+        <br>
+  
+        <label for="a">A</label>
+        <input id="lineal-a" placeholder="Ingrese A" value="0" type="number"/>
+        <br>
+  
+        <label for="c">C</label>
+        <input id="lineal-c" placeholder="Ingrese C" value="0" type="number"/>
+        <br>
+  
+        <label for="m">M</label>
+        <input id="lineal-m" placeholder="Ingrese M" value="0" type="number"/>
+        <br>
+  
+        <button id="lineal-generate" onclick="generateCongruencialLineal()">Generar</button>
+      </div>
+  
+      <div class="method">
+        <h1>Método de aditivo de congruencias</h2>
+        <label for="iterations">Iteraciones</label>
+        <input id="aditivo-iterations" placeholder="Ingrese iteraciones" value="0" type="number"/>
+        <br>
+  
+        <label for="m">M</label>
+        <input id="aditivo-m" placeholder="Ingrese M" value="0" type="number"/>
+        <br>
+  
+        <label for="seed">Numeros separados por coma</label>
+        <input id="aditivo-seed" placeholder="Ingrese numeros separados por coma" value="0" type="text"/>
+        <br>
+  
+        <button id="aditivo-generate" onclick="generateAditivo()">Generar</button>
+      </div>
+    </div>
+    <div style="width: 40%; float: right;">
+      <h2>Numeros generados</h2>
+      <div style="background: #ddd;padding: 10px" id="result">
+
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
